@@ -43,3 +43,24 @@ nav a {
 nav a:hover {
     color: #5eead4; /* Couleur turquoise au survol */
 }
+/* Quand l'écran fait moins de 800px (Mobile et Tablette) */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* On empile les éléments au lieu de les mettre côte à côte */
+        padding: 20px;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2rem; /* On réduit un peu la taille du nom */
+    }
+
+    nav {
+        display: none; /* Souvent, on cache le menu texte sur mobile pour un menu burger */
+    }
+}
